@@ -45,7 +45,7 @@
       title: 'About',
       body: `<p>I’m Alex Zhou, a computer science grad student at CU Boulder. I studied computer science and math there as an undergrad.</p>
         <p>My projects range from this driving game to a local app for writing branching stories. I also work on video engineering and small language models at Spectrum.</p>
-        <div class="city-link-row"><a href="https://github.com/Alexz3221" target="_blank" rel="noopener noreferrer" class="city-inline-link">GitHub</a><a href="https://www.linkedin.com/in/alex-zhou2/" target="_blank" rel="noopener noreferrer" class="city-inline-link">LinkedIn</a><a href="../" class="city-inline-link">Home</a></div>`
+        <div class="city-link-row"><a href="https://github.com/Alexz3221" target="_blank" rel="noopener noreferrer" class="city-inline-link">GitHub</a><a href="https://www.linkedin.com/in/alex-zhou2/" target="_blank" rel="noopener noreferrer" class="city-inline-link">LinkedIn</a><a href="https://alexz3221.github.io/Portfolio/" class="city-inline-link">Home</a></div>`
     },
     projects: {
       title: 'Projects',
@@ -71,7 +71,7 @@
     contact: {
       title: 'Interests',
       body: `<p>I like games with places worth getting lost in, branching stories, and translated novels. Those interests show up in this city, the story editor, and my private reader.</p>
-        <div class="city-link-row"><a href="../blog/?section=reviews" class="city-inline-link">Media Reviews</a><a href="../blog/" class="city-inline-link">Blog and story drafts</a><a href="../reader/" class="city-inline-link">One More Chapter</a></div>`
+        <div class="city-link-row"><a href="https://alexz3221.github.io/Unnecessary-Lore/?section=reviews" class="city-inline-link">Media Reviews</a><a href="https://alexz3221.github.io/Unnecessary-Lore/" class="city-inline-link">Blog and story drafts</a><a href="https://alexz3221.github.io/One-More-Chapter/" class="city-inline-link">One More Chapter</a></div>`
     }
   };
   const labels = {about: 'About', projects: 'Projects', experience: 'Experience', education: 'Education', skills: 'Skills', contact: 'Interests'};

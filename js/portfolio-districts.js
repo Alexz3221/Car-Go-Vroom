@@ -39,19 +39,19 @@
     project('oops-thats-canon','Oops, That’s Canon',['Signal Cinema',0,57.6], {x:0,y:26,z:47.4,heading:east}, {
       summary:'A local tool for interactive stories with choices and editable scenes.',
       detail:'Rewind to try another choice. Adventure Studio keeps notes about what happened as the story moves forward.',
-      link:{href:'../projects/local-ai/#adventure',label:'View the story tools'}
+      link:{href:'https://alexz3221.github.io/Portfolio/#adventure',label:'View the story tools'}
     }),
     project('computer-draw-a-little-guy','Computer, Draw a Little Guy',
       ['Render Workshop',12.35,57.6], {x:12.35,y:26,z:47.4,heading:east}, {
         summary:'Generate images and turn references into prompts.',
         detail:'The local image workspace saves your variations to a gallery.',
-        link:{href:'../projects/local-ai/#image',label:'View the image tools'}
+        link:{href:'https://alexz3221.github.io/Portfolio/#image',label:'View the image tools'}
       }),
     project('one-neuron-over','One Neuron Over',['Model Lab',-11,83],
       {x:-19.8,z:72.3,heading:Math.atan2(-28,23)}, {
         summary:'Experiments with individual language-model neurons.',
         detail:'Find neurons tied to a concept, adjust their contribution, and compare the responses.',
-        link:{href:'../lab/',label:'View One Neuron Over'}
+        link:{href:'https://alexz3221.github.io/Portfolio/#one-neuron-over',label:'View One Neuron Over'}
       }),
     project('edvise','Edvise',['Course Planning Center',-31.5,-27.5],
       {x:-38,z:-9,heading:Math.atan2(-34,-16)}, {
@@ -67,11 +67,11 @@
     project('unnecessary-lore','Unnecessary Lore',['North Printworks',58,69],
       {x:54.3,z:86,heading:Math.atan2(51,11)}, {
         summary:'My blog posts, story drafts and media reviews.',
-        link:{href:'../blog/',label:'Read Unnecessary Lore'}
+        link:{href:'https://alexz3221.github.io/Unnecessary-Lore/',label:'Read Unnecessary Lore'}
       }),
     project('one-more-chapter','One More Chapter',['Reading Lounge',-12.35,57.6], {x:-12.35,y:26,z:47.4,heading:east}, {
       summary:'A password-protected reader for translated novels.',
-      link:{href:'../reader/',label:'Visit the reader'}
+      link:{href:'https://alexz3221.github.io/One-More-Chapter/',label:'Visit the reader'}
     })
   ];
 

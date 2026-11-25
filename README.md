@@ -1,6 +1,6 @@
 # Car Go Vroom
 
-Static Three.js driving playground and interactive portfolio. Serve the repository over HTTP and open `/drive/`. There is no build step. Three.js r128 loads from jsDelivr; CANNON 0.6.2 and GLTFLoader are bundled.
+Static Three.js driving playground and interactive portfolio. Serve the repository over HTTP and open the root URL. There is no build step. Three.js r128 loads from jsDelivr; CANNON 0.6.2 and GLTFLoader are bundled.
 
 ## Cars and maps
 
@@ -9,7 +9,7 @@ Five cars share a 120 Hz rigid-body, four-wheel raycast suspension engine: Comet
 The selector offers two separate cities, the mountain, and a Racetrack / stunt course group:
 
 - **Portfolio City** is the default map. The arrival street has six individually modeled buildings, raised sidewalks, and a dumpling stall next to a tea cart. An enclosed transfer bridge crosses above its catwalks. The drivable Skyway connects the Night Market to the Service District through two tower portals. You can start at either ramp from the City Guide. The side routes pass storefronts, campus skybridges, and a test bay with a jump and movable pylons. Use the City Guide to open a portfolio stop directly or slow down near one and press E.
-- **Cities: Skylines** is the imported free-drive map. Select it in the menu or open `/drive/?map=skylines` directly. The first visit loads the terrain and nearby streets. Its map offers district and street jumps.
+- **Cities: Skylines** is the imported free-drive map. Select it in the menu or open `/?map=skylines` directly. The first visit loads the terrain and nearby streets. Its map offers district and street jumps.
 - **Cliffside mountain** is an 894 m winding ledge with 7 m asphalt, real collision cliffs, and a steep ascent and descent. Falling off requires a reset.
 - **Racetrack / stunt course** is a 1.19 km ordered route with a 9 m overpass, slalom gates, an 8 m jump gap, a lower crossing, and a narrow balance bridge. Its road slabs are the colliders; there is no paved shortcut around a stunt. Approach the orange jump around 52–63 mph and slow down for the blue bridge.
 
@@ -62,7 +62,6 @@ The three imported course GLBs live in `assets/courses/`. Their scene credits ar
 With Node.js 18+:
 
 ```sh
-cd drive
 npm ci
 npm test
 node --check js/main.js
@@ -74,4 +73,4 @@ node --check js/portfolio-ui.js
 
 Automated tests cover car motion and collisions, the built-in City, imported terrain and nearby collision bodies, road junction and ramp geometry, map and car switching, converter output, the cliff route, stunt slabs and obstacles, cameras, touch controls, model loading, and resource disposal. `DRIVE_FULL_ROAD_AUDIT=1 node --test tests/road-surface-coverage.test.cjs` checks asphalt and terrain coverage at spawn and seven fast-travel districts. `tests/portfolio-ui-smoke.html` exercises the guide, cards, map zoom/pan, M hotkey, fast travel, E prompt, and Escape in a browser. `tests/road-preview.html?x=1840.721&z=-1052.141&span=100` gives a top-down WebGL view of a known tight bend. Check the imported City, cliff, stunt route, and mobile controls in a WebGL browser before deployment.
 
-Open `/drive/?audit=1` to check the rendered Portfolio City. The browser console reports solid geometry crossing marked sign faces or the central clearance of ground and elevated lanes. Run `await auditPortfolioCity()` in the console after editing a live scene to repeat the check. The test suite also covers the road joins, moving-camera reflections, and Skyway crossings.
+Open `/?audit=1` to check the rendered Portfolio City. The browser console reports solid geometry crossing marked sign faces or the central clearance of ground and elevated lanes. Run `await auditPortfolioCity()` in the console after editing a live scene to repeat the check. The test suite also covers the road joins, moving-camera reflections, and Skyway crossings.
